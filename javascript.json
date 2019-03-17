@@ -1,0 +1,43 @@
+{
+  "Console log": {
+    "prefix": "cl",
+    "body": "console.log('$1', $1)"
+  },
+  "React class component": {
+    "prefix": "rccs",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "class $TM_FILENAME_BASE$1 extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "",
+      "\t\t\t</div>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE$1",
+      ""
+    ]
+  },
+  "mapStateToProps and mapDispatchToProps": {
+    "prefix": "mstp",
+    "body": [
+      "const mapStateToProps = state = ({",
+      "\t",
+      "})",
+      "",
+      "const mapDispatchToProps = dispatch = ({",
+      "\t",
+      "})",
+      "",
+      "export default connect(",
+      "\tmapStateToProps,",
+      "\tmapDispatchToProps,",
+      ")($1)",
+      ""
+    ]
+  }
+}
