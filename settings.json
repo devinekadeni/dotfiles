@@ -1,0 +1,32 @@
+{
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  // "editor.formatOnSave": true,
+  "workbench.colorTheme": "Monokai",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.folding": true,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "'Fira Code', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "material-icon-theme.folders.color": "#a06e03",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "explorer.confirmDelete": false,
+  "editor.foldingStrategy": "indentation",
+  "workbench.activityBar.visible": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "window.zoomLevel": 0,
+  "eslint.autoFixOnSave": true,
+  "breadcrumbs.enabled": true,
+  "workbench.statusBar.visible": true,
+  "color-highlight.markRuler": false,
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.extensionsPath": "",
+  // "eslint.autoFixOnSave": true,
+}
