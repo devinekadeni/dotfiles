@@ -1,7 +1,8 @@
 {
   "Console log": {
     "prefix": "cl",
-    "body": "console.log('$1', $1)"
+    "body": "console.log('$1', $1)",
+    "description": "console log with 2 param"
   },
   "React class component": {
     "prefix": "rccs",
@@ -20,7 +21,8 @@
       "",
       "export default $TM_FILENAME_BASE$1",
       ""
-    ]
+    ],
+    "description": "React class component"
   },
   "mapStateToProps and mapDispatchToProps": {
     "prefix": "mstp",
@@ -38,10 +40,26 @@
       "\tmapDispatchToProps,",
       ")($1)",
       ""
-    ]
+    ],
+    "description": "mapStateToProps and mapDispatchToProps"
   },
   "React Fragment": {
     "prefix": "rf",
-    "body": ["<>", "\t$1", "</>"]
+    "body": [
+      "<>",
+      "\t$1",
+      "</>"
+    ],
+    "description": "React fragment only React 16.2++"
+  },
+  "ES6 Import default module": {
+    "prefix": "imf",
+    "body": "import $2 from '$1'",
+    "description": "import default module"
+  },
+  "ES6 Import object module": {
+    "prefix": "imfo",
+    "body": "import { $2 } from '$1'",
+    "description": "import object module"
   }
 }
