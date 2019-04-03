@@ -27,11 +27,11 @@
   "mapStateToProps and mapDispatchToProps": {
     "prefix": "mstp",
     "body": [
-      "const mapStateToProps = state = ({",
+      "const mapStateToProps = state => ({",
       "\t",
       "})",
       "",
-      "const mapDispatchToProps = dispatch = ({",
+      "const mapDispatchToProps = dispatch => ({",
       "\t",
       "})",
       "",
@@ -45,11 +45,7 @@
   },
   "React Fragment": {
     "prefix": "rf",
-    "body": [
-      "<>",
-      "\t$1",
-      "</>"
-    ],
+    "body": ["<>", "\t$1", "</>"],
     "description": "React fragment only React 16.2++"
   },
   "ES6 Import default module": {
