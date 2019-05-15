@@ -57,5 +57,15 @@
     "prefix": "imfo",
     "body": "import { $2 } from '$1'",
     "description": "import object module"
+  },
+  "Export Default": {
+    "prefix": "ed",
+    "body": "export default $1",
+    "description": "export default "
+  },
+  "Comment Block": {
+    "prefix": "cmmt",
+    "body": ["/**", " * $1", " */"],
+    "description": "comment block"
   }
 }
