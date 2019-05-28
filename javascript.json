@@ -67,5 +67,16 @@
     "prefix": "cmmt",
     "body": ["/**", " * $1", " */"],
     "description": "comment block"
+  },
+  "Stateless Component": {
+    "prefix": "slc",
+    "body": [
+      "const $TM_FILENAME_BASE = (props) => {",
+      "\treturn <div>$1</div>",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE",
+      ""
+    ]
   }
 }
