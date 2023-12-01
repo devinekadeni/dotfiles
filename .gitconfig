@@ -1,13 +1,25 @@
 [user]
-	email = devin@getcraft.com
+        email = vinsensius.ekadeni@tiket.com
+        name = Devin Ekadeni
+        signingkey = [insert_your_key] #vinsensius.ekadeni@tiket.com
+        # signingkey = [insert_your_key] #devinekadeni@gmail.com
 
 [alias]
    # Some useful alias that could make your life easier
    # You could add your own alias if you want to
    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short -n 15
    hist2 = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+   echogrep = "!f() { git branch | grep \"$1\" | xargs echo; }; f"
+   deletegrep = "!f() { git branch | grep \"$1\" | xargs git branch -D; }; f"
+
   #  s = status -s
   #  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   #  lgt = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --tags
 [core]
-	trustctime = false
+        trustctime = false
+[pull]
+        rebase = false
+[init]
+        defaultBranch = main
+[commit]
+        gpgsign = true
