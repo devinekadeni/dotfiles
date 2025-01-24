@@ -78,6 +78,7 @@ jobs:
 
     - name: Output new tag
       run: |
+        NEW_TAG=${{ env.NEW_TAG }}
         echo "Generated tag: $NEW_TAG"
         echo "tag=$NEW_TAG" >> $GITHUB_ENV
         echo "::set-output name=generated-tag::$NEW_TAG"
