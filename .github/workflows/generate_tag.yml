@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment (staging or production)'
+        description: 'Tag environemnt (v.gk - staging or v.prd - production)'
         required: true
         default: 'staging'
         type: choice
@@ -76,4 +76,4 @@ jobs:
       - name: Add tag result to summary
         run: |
           echo "### Generated Tag" >> $GITHUB_STEP_SUMMARY
-          echo "The new tag is **${{ env.NEW_TAG }}**" >> $GITHUB_STEP_SUMMARY
+          echo "**${{ env.NEW_TAG }}**" >> $GITHUB_STEP_SUMMARY
