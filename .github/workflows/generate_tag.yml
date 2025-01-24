@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'staging for v.gk or production for v.prd'
+        description: 'staging: v.gk | production: v.prd'
         required: true
         default: 'staging'
         type: choice
